@@ -3,7 +3,14 @@
     padding: 0;
     margin: 0;
 }
-
+@font-face {
+    font-family: "Space-Reg";
+    src: url(./font/SpaceMono-Regular.ttf);
+}
+@font-face {
+    font-family: "Space-Bold";
+    src: url(./font/SpaceMono-Bold.ttf);
+}
 
 @media only screen and (max-width:376px) {
     body{
@@ -15,6 +22,7 @@
         /* align-items: center; */
         justify-content: center;
         /* align-items: flex-end; */
+        overflow-x: hidden;
         
     }
     .logo{
@@ -34,6 +42,7 @@
         border-top-left-radius: 1.6rem;
         border-top-right-radius: 1.6rem;
         height: 789px;
+        width: 375px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,18 +53,99 @@
 
     .dashboard-info{
         background-color: #f4f4f4;
+        margin-bottom: 40px;
     }
 
     .dashboard-card{
         background-color:#00474B;
-        margin-top: 460px;
+        margin-top: 430px;
         margin-bottom: 32px;
         height: 275px;
         width: 327px;
         border-radius: 1rem;
-        align-self: flex-end;
+        /* align-self: flex-end; */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        height:116px;
+        width: 295px;
 
     }
-    .
+    .card-info  h4{
+        font-family: 'Space-Reg';
+        font-size: 1rem;
+        font-weight: 700;
+        /* line-height: 23.7px; */
+        color: #fff;
+
+        margin-right: 5px;
+    }
+    .card-info p{
+        font-family: 'Space-Reg';
+        font-weight: 700;
+        /* line-height: 19.25px; */
+        font-size: 13px;
+        color: #7F9D9F;
+
+    }
+    .card-info h2{
+        font-family: 'Space-Bold';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42.39px;
+        letter-spacing: -0.67px;
+
+        color:#26C2AE;
+    }
     
+    .card-info-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 6rem;  
+    }
+    
+    .card-info-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;  
+    }
+    .dashboard-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        margin-top: 1rem;
+
+    }
+    
+    button{
+        border: none;
+        background-color: #26C2AE;
+        border-radius: 5px;
+        width: 281px;
+        height: 48px;
+
+    }
+
+    .dashboard-btn h3{
+        font-family: 'Space-Reg';
+        color: #00474B;
+    }
 }
