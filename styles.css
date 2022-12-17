@@ -50,9 +50,64 @@
         
         /* align-self: flex-end; */
     }
+    .first-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-row > h4{
+        margin-bottom: 8px;
+        font-family: 'Space-Reg';
+        font-size: 16px;    
+        font-weight: 700;
+        /* line-height: 24px; */
+        letter-spacing: 0px;
+        text-align: left;
+        color: #5E7A7D;
+    }
 
+    .input-bx-1{
+        width: 311px;
+        height: 48px;
+        background-color: #F3F9FA;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11rem;
+    }
+    .input-bx-1 > h2{
+        /* margin-right: 50px; */
+
+        font-family: 'Space-Bold';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35.55px;
+
+        color: #00474B;
+    }
+    .input-bx-1 > p{
+        font-family: 'Space-Reg';
+        
+        
+        color: #9EBBBD;
+    }
+    .second-row{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    .second-row > h4{
+        font-family: 'Space-Reg';
+        color: #00474B;
+    }
+    .tip-section{
+        display: flex;
+        justify-content: flex-start;
+    }
     .dashboard-info{
-        background-color: #f4f4f4;
+        margin-top: 2rem;
         margin-bottom: 40px;
     }
 
