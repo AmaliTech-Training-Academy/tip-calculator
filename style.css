@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    background-color:#C5E4E7 ;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.tip-calculator{
+    width: 990px;
+    height: 490px;
+    background-color: white !important;
+    display: flex;
+    flex-direction: row;
+    padding: 2.3rem;
+    margin: 5rem;
+    border-radius: 1.5rem 1.5rem ;
+}
+
+.first-part{
+    margin-top: 1rem;
+    margin-left: 1.2rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: hsl(186, 14%, 43%);
+    font-family: 700;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    border-color:transparent;
+    box-sizing: border-box;
+    outline: none !important;
+    padding: 5px;
+    padding-right: 18px;
+    background-position: 14px 15px !important;
+    background-repeat: no-repeat !important;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-size: 21px !important;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-family: "Space mono", monospace !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bill-type{
+    background-image: url(./images/icon-dollar.svg);
+    margin-bottom: 3.6rem;
+}
+
+#bill-input{
+    margin-bottom: 3.4rem;
+}
+
+input:hover{
+    border-color: #26C2AE;
+}
+
+.tips{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    row-gap: 1.2em;
+    column-gap: 18px;
+    margin-bottom: 3.4rem;
+}
+
+.tip-container{
+    background-color: hsl(183, 100%, 15%);
+    color: #ffff;
+    height: 48px;
+    display: flex;
+    /* width: 5rem; */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 4px;
+    cursor:  pointer;
+}
+
+.tip-container:hover{
+    background: #9FE8DF;
+
+}
+
+.active-tip{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    font-weight: bolder !important;
+}
+
+
+
+.people-input{
+    background-image: url(./images/icon-person.svg)  !important;
+    margin-bottom: -5rem;
+}
+
+.result{
+    display: flex !important;
+    flex-direction: column;
+    align-content: space-between;
+    width: 30rem;
+    margin-left:auto;
+    background-color:hsl(183, 100%, 15%) !important;
+    color: #ffff;
+    padding: 48px 38px !important;
+    border-radius: 12px !important;
+}
+
+.tip-amount, .tip-total {
+    display: flex  !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 1.7rem !important;
+}
+
+.person{
+    font-size: 15px !important;
+    color: hsl(184, 14%, 56%)  !important;
+    font-weight: 700  !important;
+}
+
+.amount{
+    font-size: 55px;
+    color: hsl(172, 67%, 45%) !important;
+    font-weight: 700 !important;
+}
+
+.reset{
+    display: flex;
+    margin-top: 9.5rem;
+    justify-content: center;
+    align-items: center !important;
+    font-size: 24px !important;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    background-color: #0D686D;
+    padding: 13px 0 13px 0 !important;
+    border-radius: 5px !important;
+   
+}
+
+.reset:hover{
+    cursor: pointer;
+    background: #9FE8DF;
+}
+
+#tip-custom input{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 7.2rem;
+    height: 3rem !important;;
+}
+
+.people-page{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.error-message{
+    color: red !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
