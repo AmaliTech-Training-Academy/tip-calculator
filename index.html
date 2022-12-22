@@ -19,43 +19,58 @@
     </div>
     <div class="tip-calculator">
       <div class="first-part" >
-          <label for="">Bill</label>
-          <input type="number" class="bill-type" id="bill-input" min ="0">
-          <label for="">Select Tip %</label>
-          <div class="tips">
-            <div class="tip-container">5%</div>
-            <div class="tip-container">10%</div>
-            <div class="tip-container active-tip">15%</div>
-            <div class="tip-container">25%</div>
-            <div class="tip-container">50%</div>
-            <div id="tip-custom"> <input type="number"  class="tip-custom" placeholder="Custom"></div>
+      <div class="bill-section">
+        <label for="">Bill</label>
+        <input type="number" class="bill-type" id="bill-input" min ="0">
+      </div>
+          <div class="select-tip-section">
+            <label for="">Select Tip %</label>
+            <div class="tips">
+              <div class="tip-container">5%</div>
+              <div class="tip-container">10%</div>
+              <div class="tip-container active-tip">15%</div>
+              <div class="tip-container">25%</div>
+              <div class="tip-container">50%</div>
+              <div id="tip-custom" class><input type="number"  class="tip-custom" placeholder="Custom"></div>
+            </div>
+
           </div>
             <div class="people-page">
-              <label for="">Number of People</label>
+              <div class="nop-section">
+                <input type="number" class="people-input" min ="0">
+                <label for="">Number of People</label>
+              </div>
              
 
               <label for="" class="error-message"></label>
 
             </div> 
-            <input type="number" class="people-input" min ="0">
           </div>
           
             <div class="result">
-              <div class="tip-amount">
-                <div class="text">
-                  <p>Tip Amount</p>
-                  <p class="person">/ person</p>
-                </div>
-                <div class="amount" id="tip-amount">$4.27</div>
-              </div>
+              <div class="card-info-1">
                 <div class="tip-amount">
                   <div class="text">
-                    <p>Total</p>
+                    <h4>Tip Amount</h4>
                     <p class="person">/ person</p>
                   </div>
-                  <div class="amount" id="total-amount">$32.79</div>
+                  <div class="amount" id="tip-amount"><h2>$4.27</h2></div>
                 </div>
-              <div class="reset">RESET</div>
+                  <div class="tip-amount">
+                    <div class="text">
+                      <h4>Total</h4>
+                      <p class="person">/ person</p>
+                    </div>
+                    <div class="amount" id="total-amount"><h2>$32.79</h2></div>
+                  </div>
+              </div>
+              <div class="reset">
+                <button>
+                  <h3>
+                    RESET
+                  </h3>
+                </button>
+              </div>
           </div>
     </div>
   <script src="app.js"></script>
