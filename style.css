@@ -1,26 +1,7 @@
-
-* {
-    box-sizing: border-box;
-    padding: 0;
+*{
     margin: 0;
-}
-  @font-face {
-    font-family: "Space-Reg";
-    src: url(./font/SpaceMono-Regular.ttf);
-}
-  @font-face {
-    font-family: "Space-Bold";
-    src: url(./font/SpaceMono-Bold.ttf);
-}
-  
-.tag {
-    font-family: 'Space-Reg';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5e7a7d;
-    margin-bottom: 6px;
+    padding: 0;
+    
 }
 
 body{
@@ -31,6 +12,7 @@ body{
     background-color:#C5E4E7 ;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    margin: 3rem auto;
 }
 
 .logo{
@@ -125,8 +107,6 @@ input:hover{
     font-weight: bolder !important;
 }
 
-
-
 .people-input{
     background-image: url(./images/icon-person.svg)  !important;
     margin-bottom: -5rem;
@@ -165,12 +145,12 @@ input:hover{
 
 .reset{
     display: flex;
-    margin-top: 8rem;
+    margin-top: 8.5rem;
     justify-content: center;
     align-items: center !important;
     font-size: 24px !important;
     font-weight: 700;
-    color: hsl(183, 100%, 15%);
+    color: #00474B;
     background-color: #0D686D;
     padding: 13px 0 13px 0 !important;
     border-radius: 5px !important;
@@ -187,8 +167,15 @@ input:hover{
     justify-content: center;
     box-sizing: border-box;
     font-size: 20px;
-    width: 7.2rem;
+    width: 6.8rem;
     height: 3rem !important;;
+}
+
+#tip-custom ::placeholder{
+    color: #547878;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
 }
 
 .people-page{
@@ -199,187 +186,73 @@ input:hover{
 .error-message{
     color: red !important;
 }
-  
-  @media only screen and (max-width: 375px) {
-    body{
-      background-color: #c5e4e7;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .logo {
-      flex: 0.5;
-      padding: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .tip-calculator {
-      flex: 0.5;
-      /* margin-bottom: -83px; */
-      background-color: #fff;
-      border-top-left-radius: 1.6rem;
-      border-top-right-radius: 1.6rem;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .bill-section,
-    .nop-section {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .bill-type{
-      background-color: #f3f9fa;
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 14px;
-      /* cursor: pointer; */
-    }
+
+@media only screen and (max-width: 480px) and (min-width: 375px){
     
-    .bill-type :hover {
-      border: 5px solid #26c2ae;
-      
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 90px;
     }
-    .bill-type > h2 {
-      font-family: 'Space-Bold';
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 35.55px;
-  
-      color: #00474b;
+
+    .logo{
+        margin-top: 10px;
     }
-    .bill-type > p {
-      font-family: 'Space-Reg';
-      color: #9ebbbd;
-      font-size: 24px;
-      line-height: 35.55px;
+
+    .tip-calculator{
+        width: 335px;
+        height: 900px;
+        margin-left: 6rem;
+        box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+        border-radius: 25px 25px 0px 0px;
     }
-    .select-tip-section {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+
+    label{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: -1.5rem;
     }
-  
-    .tips {
-      display: flex;
-      flex-direction: row;
-      gap: 17px;
+
+    input{
+        width: 21rem;
+        margin-left: -1.5rem;
     }
-    .tip-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex: 0.5;
-      border-radius: 5px;
-      color: #fff;
-      padding: 7px 0;
-      background-color: #00474b;
+
+    .tips{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        row-gap: 1.2em;
+        column-gap: 5rem;
+        margin-bottom: 3.4rem;
+        margin-left: -1.5rem;
     }
-  
-    .tip-container > span {
-      font-family: 'Space-Reg';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 36px;
-      color: #fff;
+
+    .tip-container{
+        width: 10rem;
     }
-    .result {
-      width: 100%;
-      height: auto;
-      padding: 37px 24px;
-      border-radius: 15px;
-      background-color: #00474b;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* align-items: center; */
-      gap: 1.5rem;
-      /* border-style: none; */
+
+    .result{
+     margin-top: 35rem;
+     margin-left: -21rem;
     }
-    .card-info-1 {
-      display: flex;
-      flex: 1;
-      flex-direction: row;
-      justify-content: space-between;
-      /* gap: 2rem; */
+
+    #tip-custom input{
+        margin-left: 1px;
+        width: 10rem;
     }
-    .card-info-1 h4 {
-      font-family: "Space-Reg";
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 24px;
-      color: #fff;
+
+    #tip-custom ::placeholder{
+        margin-left: -0.5rem;
+        font-weight: 700;
+        font-size: 21.3px;
+        line-height: 36px;
     }
-    .card-info-1 p {
-      font-family: "Space-Reg";
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 19px;
-      color: #7f9d9f;
+
+    .reset{
+        margin-top: -1rem;
     }
-    .card-info-1 h2 {
-      font-family: "Space-Bold";
-      font-size: 2rem;
-      line-height: 47.39px;
-      letter-spacing: 0.67;
-      color: #26c2ae;
-    }
-  
-    .reset {
-      display: flex;
-  
-      /* background-color: #26c2ae; */
-    }
-    button {
-      background-color: #26c2ae;
-      border-radius: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px 0;
-  
-      border-style: none;
-      flex: 1;
-    }
-  
-    button h3 {
-      font-family: "Space-Reg";
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 29.62px;
-  
-      color: #00474b;
-    }
-}  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
